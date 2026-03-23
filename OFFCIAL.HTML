@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT OF WEB DEVELOPMENT</title>
+    
+    <style>
+        /* আপনার পছন্দের Poppins ফন্ট */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+        body {
+            background: radial-gradient(circle at top, #0f172a 0%, #020617 100%);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px 0;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            width: 320px;
+            padding: 40px 25px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6);
+        }
+
+        /* ইয়েতি অ্যানিমেশন */
+        .yeti-container {
+            width: 100px;
+            height: 100px;
+            background: #e2e8f0;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #10b981;
+        }
+
+        .yeti-face {
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -5px;
+            left: 10px;
+        }
+
+        .eye {
+            width: 10px;
+            height: 12px;
+            background: #0f172a;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+        }
+        .eye.left { left: 22px; }
+        .eye.right { right: 22px; }
+
+        .hand {
+            width: 35px;
+            height: 40px;
+            background: #fff;
+            border-radius: 10px 10px 0 0;
+            position: absolute;
+            bottom: -40px;
+            border: 2px solid #e2e8f0;
+            animation: peekaboo 4s infinite ease-in-out;
+        }
+        .hand.left { left: 10px; }
+        .hand.right { right: 10px; }
+
+        @keyframes peekaboo {
+            0%, 20%, 100% { bottom: -40px; }
+            40%, 80% { bottom: 15px; } /* চোখ ঢাকার অ্যানিমেশন */
+        }
+
+        /* ১. প্রথম কোডের মতো বড় নাম ও ফন্ট */
+        h1 {
+            font-size: 35px; /* একদম প্রথম কোডের সাইজ */
+            font-weight: 800;
+            margin: 0;
+            background: linear-gradient(to right, #00dbde, #fc00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* ২. প্রথম কোডের মতো সাবটাইটেল */
+        .subtitle {
+            font-size: 13px; /* প্রথম কোডের সাইজ */
+            color: #10b981;
+            margin: 5px 0 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 14px;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #10b981;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* ৩. নতুন About সেকশন */
+        .about-section {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: left;
+        }
+
+        .about-section h5 {
+            font-size: 14px;
+            color: #fff;
+            margin: 0 0 8px 0;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .about-section h6 {
+            font-size: 12px;
+            color: #94a3b8;
+            line-height: 1.6;
+            margin: 0;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="yeti-container">
+            <div class="yeti-face">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+            </div>
+            <div class="hand left"></div>
+            <div class="hand right"></div>
+        </div>
+
+        
+        <div class="profile-card">
+        <h1>ABDULLAH</h1>
+        <h5>✨ STUDENT OF WEB DEVOLOPMENT  🍾</h5>
+
+        <div class="links">
+            <a href="https://www.facebook.com/profile.php?id=61579542071694" target="_blank" class="btn">Facebook Profile</a>
+            <a href="https://t.me/BELO_615" target="_blank" class="btn">Telegram Channel</a>
+        <div class="about-section">
+            <h5>About Me</h5>
+             <div class="profile-card">
+        <h6><p></p>✨ I am Abdullah. I am a student of Web Development. I believe in taking risks for a better future 🍂🍾</p><h6>
+        </div>
+    </div>
+
+</body>
+</html>
